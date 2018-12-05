@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavParams, ViewController } from 'ionic-angular';
 import { Book } from '../../models/Book';
-import { DataGestion } from '../../services/data-gstion.service';
+import { DataGestion } from '../../services/data-gestion.service';
 
 @Component({
   selector: 'page-lend-book',

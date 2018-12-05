@@ -1,17 +1,15 @@
 <ion-header>
-
   <ion-navbar>
     <ion-buttons>
       <button ion-button clear (click)="dismissModal()">Fermer</button>
     </ion-buttons>
     <ion-title>{{ cd.name }}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-  <ion-card>
+  <ion-card [ngClass]="{'is-lend': cd.isLend, 'is-not-lend': !cd.isLend}">
     <ion-card-header>{{ cd.name }}</ion-card-header>
     <ion-card-content>
       <p>{{ cd.band }}</p>

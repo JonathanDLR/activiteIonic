@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuController, ModalController } from 'ionic-angular';
-import { DataGestion } from '../../services/data-gstion.service';
+import { DataGestion } from '../../services/data-gestion.service';
 import { Book } from '../../models/Book';
 import { LendBookPage } from '../lend-book/lend-book';
 

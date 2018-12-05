@@ -1,17 +1,15 @@
 <ion-header>
-
   <ion-navbar>
     <ion-buttons>
       <button ion-button clear (click)="dismissModal()">Fermer</button>
     </ion-buttons>
     <ion-title>{{ book.name }}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-  <ion-card>
+  <ion-card [ngClass]="{'is-lend': book.isLend, 'is-not-lend': !book.isLend}">
     <ion-card-header>{{ book.name }}</ion-card-header>
     <ion-card-content>
       <p>{{ book.author }}</p>

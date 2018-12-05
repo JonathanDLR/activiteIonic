@@ -1,3 +1,8 @@
 page-lend-book {
-
+    .is-lend {
+        background-color: color($colors, danger-light);
+    }
+    .is-not-lend {
+        background-color: color($colors, secondary-light);
+    }
 }

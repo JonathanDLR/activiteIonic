@@ -12,7 +12,7 @@ import { CdListPage } from '../pages/cd-list/cd-list';
 import { LendBookPage } from '../pages/lend-book/lend-book';
 import { LendCdPage } from '../pages/lend-cd/lend-cd';
 import { SettingsPage } from '../pages/settings/settings';
-import { DataGestion } from '../services/data-gstion.service';
+import { DataGestion } from '../services/data-gestion.service';
 
 @NgModule({
   declarations: [

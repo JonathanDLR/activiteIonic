@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MenuController, ModalController } from 'ionic-angular';
 import { CD } from '../../models/CD';
-import { DataGestion } from '../../services/data-gstion.service';
+import { DataGestion } from '../../services/data-gestion.service';
 import { LendCdPage } from '../lend-cd/lend-cd';
 
 @Component({
