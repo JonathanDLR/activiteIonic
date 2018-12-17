@@ -15,13 +15,23 @@
       <p>{{ book.author }}</p>
       <p *ngFor="let line of book.description">{{ line }}</p>
     </ion-card-content>
+    <span *ngIf="book.isLend">{{ book.emprunteur }}</span>
+    <form [formGroup]="bookLendForm" *ngIf="!book.isLend">
+       <ion-list>
+        <ion-item>
+          <ion-label>Nom Emprunteur</ion-label>
+          <ion-input formControlName="name"></ion-input>           
+        </ion-item>
+        <button ion-button full (click)="onSubmitForm()">Enregistrer</button>
+      </ion-list>
+    </form>
     <ion-grid>
       <ion-row>
         <ion-col>
           <button ion-button
                   full
                   color="danger"
-                  [disabled]="book.isLend"
+                  [disabled]="book.isLend || !book.emprunteur"
                   (click)="onToggleBook()">Emprunter</button>
         </ion-col>
         <ion-col>

@@ -19,7 +19,8 @@
             *ngFor="let book of bookList; let i = index"
             (click)="onLoadBook(i)">
       <ion-icon name="lend" [color]="book.isLend ? 'secondary' : 'danger'"></ion-icon>
-      {{ book.name }}      
+      {{ book.name }}
+      <span *ngIf="book.isLend">emprunté par: {{ book.emprunteur }}</span>
     </button>
   </ion-list>
 </ion-content>

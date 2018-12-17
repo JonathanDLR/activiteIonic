@@ -15,13 +15,23 @@
       <p>{{ cd.band }}</p>
       <p *ngFor="let line of cd.description">{{ line }}</p>
     </ion-card-content>
+    <span *ngIf="cd.isLend">{{ cd.emprunteur }}</span>
+    <form [formGroup]="cdLendForm" *ngIf="!cd.isLend">
+       <ion-list>
+        <ion-item>
+          <ion-label>Nom Emprunteur</ion-label>
+          <ion-input formControlName="name"></ion-input>           
+        </ion-item>
+        <button ion-button full (click)="onSubmitForm()">Enregistrer</button>
+      </ion-list>
+    </form>
     <ion-grid>
       <ion-row>
         <ion-col>
           <button ion-button
                   full
                   color="danger"
-                  [disabled]="cd.isLend"
+                  [disabled]="cd.isLend || !cd.emprunteur"
                   (click)="onToggleCd()">Emprunter</button>
         </ion-col>
         <ion-col>

@@ -17,7 +17,8 @@
                 *ngFor="let cd of cdList; let i = index"
                 (click)="onLoadCd(i)">
           <ion-icon name="lend" [color]="cd.isLend ? 'secondary' : 'danger'"></ion-icon>
-          {{ cd.name }}        
+          {{ cd.name }}
+          <span *ngIf="cd.isLend">emprunté par: {{ cd.emprunteur }}</span>        
         </button>
       </ion-list>
 </ion-content>

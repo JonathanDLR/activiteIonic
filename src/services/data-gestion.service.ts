@@ -11,7 +11,8 @@ export class DataGestion {
                 'Genre: celtic punk',
                 'Year: 1986'
             ],
-            isLend: false
+            isLend: false,
+            emprunteur: ""
         },
         {
             band: 'Iron Maiden',
@@ -20,7 +21,8 @@ export class DataGestion {
                 'Genre: heavy metal',
                 'Year: 1983'
             ],
-            isLend: false
+            isLend: false,
+            emprunteur: ""
         },
         {
             band: 'Daughters',
@@ -29,7 +31,8 @@ export class DataGestion {
                 'Genre: post-punk, noise',
                 'Year: 2018'
             ],
-            isLend: true
+            isLend: false,
+            emprunteur: ""
         }
     ];
 
@@ -41,7 +44,8 @@ export class DataGestion {
                 'Genre: SF',
                 'Year: 1966'
             ],
-            isLend: false
+            isLend: false,
+            emprunteur: ""
         },
         {
             author: 'H. P. Lovecraft',
@@ -50,7 +54,8 @@ export class DataGestion {
                 'Genre: Fantastique - Horreur',
                 'Year: 1936'
             ],
-            isLend: false
+            isLend: false,
+            emprunteur: ""
         },
         {
             author: 'Frank Herbert',
@@ -59,7 +64,8 @@ export class DataGestion {
                 'Genre: SF',
                 'Year: 1965'
             ],
-            isLend: false
+            isLend: false,
+            emprunteur: ""
         }
     ];
 
