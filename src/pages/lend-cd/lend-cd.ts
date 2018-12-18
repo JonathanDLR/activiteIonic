@@ -34,6 +34,7 @@ export class LendCdPage implements OnInit {
 
   onSubmitForm() {
     this.cd.emprunteur = this.cdLendForm.get('name').value;
+    this.dataGestion.saveStorage();
   }
 
   dismissModal() {
@@ -42,6 +43,8 @@ export class LendCdPage implements OnInit {
 
   onToggleCd() {
     this.dataGestion.onToggleLend(this.cd);
+    this.dataGestion.saveStorage();
+    this.dismissModal();
   }
 
 }

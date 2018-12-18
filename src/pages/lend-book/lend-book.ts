@@ -34,6 +34,7 @@ export class LendBookPage implements OnInit {
 
   onSubmitForm() {
     this.book.emprunteur = this.bookLendForm.get('name').value;
+    this.dataGestion.saveStorage();
   }
 
   dismissModal() {
@@ -42,5 +43,7 @@ export class LendBookPage implements OnInit {
 
   onToggleBook() {
     this.dataGestion.onToggleLend(this.book);
+    this.dataGestion.saveStorage();
+    this.dismissModal();
   }
 }

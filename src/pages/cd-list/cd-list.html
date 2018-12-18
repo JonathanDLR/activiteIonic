@@ -18,7 +18,7 @@
                 (click)="onLoadCd(i)">
           <ion-icon name="lend" [color]="cd.isLend ? 'secondary' : 'danger'"></ion-icon>
           {{ cd.name }}
-          <span *ngIf="cd.isLend">emprunté par: {{ cd.emprunteur }}</span>        
+          <span *ngIf="cd.isLend">=> {{ cd.emprunteur }}</span>        
         </button>
       </ion-list>
 </ion-content>

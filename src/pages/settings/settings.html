@@ -11,5 +11,11 @@
 
 
 <ion-content padding>
-  <p>Vous pouvez changer les réglages</p>
+  <ion-card>
+    <ion-card-header>Données</ion-card-header>
+    <ion-card-content>
+      <button ion-button block outline (click)="onSaveList()">Enregistrer les données</button>
+      <button ion-button block outline (click)="onFetchList()">Récupérer les données</button>
+    </ion-card-content>
+  </ion-card>>
 </ion-content>

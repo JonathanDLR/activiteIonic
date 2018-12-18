@@ -1,5 +1,7 @@
 {
   "name": "activiteionic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

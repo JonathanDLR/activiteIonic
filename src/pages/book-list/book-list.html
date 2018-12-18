@@ -20,7 +20,7 @@
             (click)="onLoadBook(i)">
       <ion-icon name="lend" [color]="book.isLend ? 'secondary' : 'danger'"></ion-icon>
       {{ book.name }}
-      <span *ngIf="book.isLend">emprunté par: {{ book.emprunteur }}</span>
+      <span *ngIf="book.isLend">=> {{ book.emprunteur }}</span>
     </button>
   </ion-list>
 </ion-content>
